@@ -4,7 +4,7 @@ import Button from "./Button";
 import SummaryItem, { Category } from "./SummaryItem";
 
 const SummaryCard = () => (
-  <div className="bg-white text-dark-gray-blue p-8 rounded-2xl w-80">
+  <div className="flex flex-col bg-white text-dark-gray-blue p-8 rounded-2xl w-80">
     <h3 className="font-semibold text-lg">Summary</h3>
 
     <div className="py-2">
