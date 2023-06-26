@@ -13,7 +13,6 @@ type Story = StoryObj<typeof SummaryItem>;
 export const Reaction: Story = {
   args: {
     title: "Reaction",
-    icon: "👍",
     category: "reaction",
     score: 80,
   },
@@ -23,7 +22,6 @@ export const Reaction: Story = {
 export const Memory: Story = {
   args: {
     title: "Memory",
-    icon: "👍",
     category: "memory",
     score: 92,
   },
@@ -33,7 +31,6 @@ export const Memory: Story = {
 export const Visual: Story = {
   args: {
     title: "Visual",
-    icon: "👍",
     category: "visual",
     score: 61,
   },
@@ -43,7 +40,6 @@ export const Visual: Story = {
 export const Verbal: Story = {
   args: {
     title: "Verbal",
-    icon: "👍",
     category: "verbal",
     score: 72,
   },
