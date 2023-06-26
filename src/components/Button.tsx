@@ -5,7 +5,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ title }) => (
-  <button className="bg-dark-gray-blue w-full rounded-2xl p-2 hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">
+  <button className="bg-dark-gray-blue w-full rounded-full p-2 my-2 hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">
     <span className="font-semibold text-white">{title}</span>
   </button>
 );
