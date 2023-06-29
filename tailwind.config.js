@@ -33,6 +33,14 @@ module.exports = {
         "light-lavender": "hsl(241, 100%, 89%)",
         "dark-gray-blue": "hsl(224, 30%, 27%)",
         "dark-blue": "hsl(223, 47%, 23%)",
+
+        // AGE CALCULATOR APP COLORS
+        "age-purple": "hsl(259, 100%, 65%)",
+        "age-light-red": "hsl(0, 100%, 67%)",
+        "age-off-white": "hsl(0, 0%, 94%)",
+        "age-light-grey": "hsl(0, 0%, 86%)",
+        "age-smokey grey": "hsl(0, 1%, 44%)",
+        "age-off-black": "hsl(0, 0%, 8%)",
       },
     },
   },
