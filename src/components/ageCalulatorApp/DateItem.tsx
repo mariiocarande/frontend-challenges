@@ -1,14 +1,10 @@
 import React from "react";
 
-export enum DateType {
-  DAY = "day",
-  MONTH = "month",
-  YEAR = "year",
-}
+import { DateType } from "@/helpers/AgeCalculatorApp.helpers";
 
 interface DateItemProps {
   type: DateType;
-  value: number;
+  value?: number;
 }
 
 const DateItem: React.FC<DateItemProps> = ({ type, value }) => {
@@ -16,7 +12,7 @@ const DateItem: React.FC<DateItemProps> = ({ type, value }) => {
 
   return (
     <div className="text-7xl font-extrabold italic">
-      <span className="text-age-purple">{value}</span>{" "}
+      <span className="text-age-purple">{value || "--"}</span>{" "}
       <span className="text-age-off-black">{displayType}</span>
     </div>
   );

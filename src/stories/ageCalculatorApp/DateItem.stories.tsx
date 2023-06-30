@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import DateItem, { DateType } from "../../components/ageCalulatorApp/DateItem";
+import DateItem from "../../components/ageCalulatorApp/DateItem";
+import { DateType } from "../../helpers/AgeCalculatorApp.helpers";
 
 const meta: Meta<typeof DateItem> = {
-  title: "DateItem",
+  title: "AgeCalculatorApp/DateItem",
   component: DateItem,
 };
 

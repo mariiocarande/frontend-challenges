@@ -39,7 +39,7 @@ module.exports = {
         "age-light-red": "hsl(0, 100%, 67%)",
         "age-off-white": "hsl(0, 0%, 94%)",
         "age-light-grey": "hsl(0, 0%, 86%)",
-        "age-smokey grey": "hsl(0, 1%, 44%)",
+        "age-smokey-grey": "hsl(0, 1%, 44%)",
         "age-off-black": "hsl(0, 0%, 8%)",
       },
     },
