@@ -3,14 +3,18 @@ import React from "react";
 import musicIcon from "../../../public/assets/icon-music.svg";
 import Image from "next/image";
 
-const PlanSection = () => {
+interface Props {
+  priceValue: string;
+}
+
+const PlanSection: React.FC<Props> = ({ priceValue }) => {
   return (
     <div className="flex flex-col items-center lg:flex-row justify-between rounded-xl p-4 bg-very-pale-blue w-full md:w-80">
       <div className="flex gap-2">
         <Image src={musicIcon} alt="music-icon" />
         <div className="flex flex-col">
           <h1 className="text-black font-bold">Plan</h1>
-          <span className="text-desaturated-blue">$59.99/year</span>
+          <span className="text-desaturated-blue">${priceValue}/year</span>
         </div>
       </div>
       <div className="flex">

@@ -34,7 +34,7 @@ const OrderSummaryComponent: React.FC = () => {
             title="Order Summary"
             description="You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!"
           />
-          <PlanSection />
+          <PlanSection priceValue="59.99" />
         </div>
 
         <div className="flex flex-col p-4 gap-2">
