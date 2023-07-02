@@ -20,15 +20,14 @@ const OrderSummaryComponent: React.FC = () => {
         redHatDisplay.className
       )}
     >
-      <div className="flex flex-row lg:flex-col items-center shadow-2xl rounded-2xl bg-white">
-        <div>
-          <Image
-            className="rounded-l-lg lg:rounded-t-lg lg:rounded-b-none"
-            alt="music-image-dance"
-            src={illustration}
-          />
-        </div>
-        <div className="p-4">
+      <div className="flex flex-col items-center shadow-2xl rounded-2xl bg-white w-full md:w-min">
+        <Image
+          height={200}
+          className="rounded-t-lg"
+          alt="music-image-dance"
+          src={illustration}
+        />
+        <div className="flex flex-col p-4">
           <ParagraphSection
             colorTitle="text-black"
             colorSubTitle="text-desaturated-blue"
@@ -38,11 +37,11 @@ const OrderSummaryComponent: React.FC = () => {
           <PlanSection />
         </div>
 
-        <div className="flex flex-col m-4 gap-2">
-          <button className="fond-bold hover:cursor-pointer bg-violet-blue p-4 rounded-lg w-80">
+        <div className="flex flex-col p-4 gap-2">
+          <button className="fond-bold hover:cursor-pointer bg-bright-blue shadow-lg shadow-bright-blue p-4 rounded-lg w-full md:w-80 hover:opacity-80 opacity-100">
             Proceed to Payment
           </button>
-          <button className="text-black fond-bold hover:cursor-pointer">
+          <button className="text-dark-gray-blue fond-extrabold hover:cursor-pointer opacity-80 hover:opacity-100 m-4">
             Cancel Order
           </button>
         </div>
