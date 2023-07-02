@@ -13,5 +13,8 @@ export default meta;
 type Story = StoryObj<typeof DateItem>;
 
 export const Primary: Story = {
-  render: () => <DateItem type={DateType.DAY} value={26} />,
+  args: {
+    type: DateType.DAY,
+    value: 26,
+  },
 };

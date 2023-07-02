@@ -6,6 +6,7 @@ import { DateType } from "../../helpers/AgeCalculatorApp.helpers";
 interface NumberInputProps {
   type: DateType;
   isError?: boolean;
+  errorMessage?: string;
 }
 
 const placeholdeMapper = {
@@ -20,7 +21,7 @@ const limitsMapper = {
   [DateType.YEAR]: { min: 1900, max: new Date().getFullYear() },
 };
 
-const NumberInput: React.FC<NumberInputProps> = ({ type, isError = false }) => {
+const NumberInput: React.FC<NumberInputProps> = ({ type, isError = false, errorMessage }) => {
   const labelClassName = isError ? 'text-age-light-red' : 'text-age-smokey-grey';
   const inputClassName = isError ? 'border-age-light-red focus:border-age-light-red' : 'border-gray-300 focus:border-age-purple';
 
@@ -31,7 +32,7 @@ const NumberInput: React.FC<NumberInputProps> = ({ type, isError = false }) => {
       </label>
       <input
         className={classNames(
-          'w-[120px] border focus-visible:outline-none rounded-md px-4 py-2 text-2xl font-bold placeholder-age-smokey-grey text-age-off-black',
+          'w-full md:w-[120px] border focus-visible:outline-none rounded-md px-4 py-2 text-2xl font-bold placeholder-age-smokey-grey text-age-off-black',
           inputClassName,
         )}
         placeholder={placeholdeMapper[type]}
@@ -39,9 +40,9 @@ const NumberInput: React.FC<NumberInputProps> = ({ type, isError = false }) => {
         min={limitsMapper[type].min}
         max={limitsMapper[type].max}
       />
-      {isError && (
+      {isError && errorMessage && (
         <div className="mt-2 text-xs text-age-light-red italic">
-          This field is required
+          {errorMessage}
         </div>
       )}
     </div>
