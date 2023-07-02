@@ -16,7 +16,7 @@ const OrderSummaryComponent: React.FC = () => {
   return (
     <div
       className={classNames(
-        "flex min-h-screen flex-col items-center justify-center bg-pale-blue-94 p-8 w-full",
+        "flex min-h-screen flex-col items-center justify-center bg-pale-blue-94 p-8 w-full bg-[url('/assets/pattern-background-desktop.svg')] bg-contain bg-no-repeat bg-top",
         redHatDisplay.className
       )}
     >
