@@ -13,5 +13,7 @@ export default meta;
 type Story = StoryObj<typeof NumberInput>;
 
 export const Primary: Story = {
-  render: () => <NumberInput type={DateType.DAY} />,
+  args: {
+    type: DateType.DAY,
+  },
 };
