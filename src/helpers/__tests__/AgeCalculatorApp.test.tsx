@@ -23,6 +23,14 @@ describe("calculateAge", () => {
 
     expect(result.years).toBe(30);
     expect(result.months).toBe(3);
-    expect(result.days).toBe(15);
+    expect(result.days).toBe(6);
+  });
+
+  it("should calculate the age correctly when day is in the future", () => {
+    const result = calculateAge(1995, 7, 11);
+
+    expect(result.years).toBe(27);
+    expect(result.months).toBe(11);
+    expect(result.days).toBe(21);
   });
 });

@@ -10,18 +10,16 @@ export const calculateAge = (year: number, month: number, day: number) => {
   const today = dayjs();
   const birthDate = dayjs(`${year}-${month}-${day} 00:00:00`);
 
-  const diff = today.diff(birthDate, "days");
-  const ageYears = Math.floor(diff / 365);
-  let ageMonths = Math.floor((diff % 365) / 30);
-  let ageDays = Math.floor((diff % 365) % 30);
+  const ageYears = today.diff(birthDate, "years");
 
-  if (
-    today.month() === birthDate.month() &&
-    today.date() === birthDate.date()
-  ) {
-    ageDays = 0;
-    ageMonths = 0;
-  }
+  const birthDateWithourYear = birthDate.add(ageYears, "years");
+  const ageMonths = today.diff(birthDateWithourYear, "months");
+
+  const birthDateWithoutYearMonth = birthDateWithourYear.add(
+    ageMonths,
+    "months"
+  );
+  const ageDays = today.diff(birthDateWithoutYearMonth, "days");
 
   return {
     years: ageYears,
