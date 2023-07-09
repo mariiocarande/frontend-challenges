@@ -1,5 +1,7 @@
 import React from "react";
 
+import ParagraphSection from "./ParagraphSection";
+
 const ResultsCard = () => (
   <div className="flex flex-col items-center bg-gradient-to-b from-light-slate-blue to-light-royal-blue rounded-2xl p-8 w-full lg:w-72">
     <h3 className="text-light-lavender font-semibold text-lg">Your Result</h3>
@@ -11,12 +13,12 @@ const ResultsCard = () => (
       </div>
     </div>
 
-    <div className="flex flex-col items-center my-5">
-      <h2 className="text-2xl font-semibold mb-2">Great</h2>
-      <p className="px-2 text-light-lavender text-sm w-52 text-center">
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </div>
+    <ParagraphSection
+      colorTitle="text-white"
+      colorSubTitle="text-light-lavender"
+      title="Great"
+      description="You scored higher than 65% of the people who have taken these tests."
+    />
   </div>
 );
 

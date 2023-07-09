@@ -1,6 +1,6 @@
+import React from "react";
 import ResultsCard from "@/components/ResultsCard";
 import SummaryCard from "@/components/SummaryCard";
-import React from "react";
 
 const ResultsSummaryChallenge = () => (
   <div className="flex min-h-screen flex-col items-center justify-center bg-white p-8">
